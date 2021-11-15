@@ -1,0 +1,15 @@
+version: '2.4'
+
+services:
+  geneweb:
+    build:
+      context: .
+    init: true
+    ports:
+      - '2316:2316'
+      - '2317:2317'
+    volumes:
+      - data:/geneweb/bases
+
+volumes:
+  data:
