@@ -16,7 +16,7 @@ One thing to know is that for security reasons GeneWeb runs under a user with th
 chown -R 999:999 /path/to/dir/you/want/to/mount
 ```
 
-# Building an Image
+### Building an Image
 If you want to build and run an image directly from this repo then you can use:
 ```
 docker-compose up
