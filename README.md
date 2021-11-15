@@ -9,7 +9,7 @@ You probably want to use the latest pre-built image on Docker Hub. You can run a
 docker run -d --name geneweb -p 2316:2316 -p 2317:2317 -v geneweb-data:/geneweb/bases callumgare/geneweb:latest
 ```
 
-You can use `-e LANGUAGE=de` to start with a different language.
+To use start GeneWeb with a language other than english set the LANGUAGE environment variable: `-e LANGUAGE=de`
 
 One thing to know is that for security reasons GeneWeb runs under a user with the user id 999 and the group id 999 inside of the container. Therefore if you're mounting a path on the host to the `/geneweb/bases` dir you'll need to make sure that directory and any files inside it have the correct file permissions.
 ```bash
