@@ -1,6 +1,6 @@
-FROM ubuntu:20.04
+FROM --platform=linux/amd64 ubuntu:20.04
 
-LABEL MAINTAINER="Callum Gare <callum@gare.com.au>"
+LABEL MAINTAINER="Callum Gare <callum@gare.au>"
 ENV LANGUAGE en
 
 RUN groupadd -r geneweb && useradd -r -s /bin/false -g geneweb geneweb
